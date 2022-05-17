@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Y HTML5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" href="css/images.css" >
+    <link rel="shortcut ico" type="image/x-icon" href="img/favicon.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/modernizr.js" ></script>
+    <script src="js/prefixfree.js" ></script>
+    <script src="js/scrollomatic.js" ></script>
+    <script>
+        $(document).ready(function(){
+        $("a.scroll").scrollomatic();
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="#home"></a>
+        <div id="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Home</a></li>
+                <li><a href="#Temas" class="scroll">Temas</a></li>
+                <li><a href="#galeria" class="scroll">Galeria</a></li>
+                <li><a href="#contacto" class="scroll">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <video loop preload="auto" autoplay >
+            <source src="video/video.mp4">
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>BIENVENIDOS</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis, qui tenetur, minima distinctio cupiditate perferendis impedit quod accusantium ullam earum animi commodi in libero enim aut sit facilis nisi.</p>
+            <a href="#temas">CONOZCA MÁS</a>
+            <div id="abajo"></div>
+
+        </section>
+
+        <section id="Temas">
+            <h3>TEMAS</h3>
+                <article>
+                    <img id="imagen1" src="img/uno.jpg" alt="imagen">
+                    <h4>NIÑOS</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, labore.</p>
+                    <a href="galerias.html">VER GALERIA</a>
+                    
+                    <img id="imagen2" src="img/dos.jpg" alt="imagen">
+                    <h4>HOMBRES</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, labore.</p>
+                    <a href="galerias.html">VER GALERIA</a>
+                    
+                    <img id="imagen3" src="img/tres.jpg" alt="imagen">
+                    <h4>MUJERES</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, labore.</p>
+                    <a href="galerias.html">VER GALERIA</a>
+                </article>
+        </section>
+
+        <section id="galeria">
+            <h2>LO DESTACADO</h2>
+            <div id="fotos">
+                <a href="#" title="imagen 1"><img src="img/1.jpg" alt="imagen1"></a>
+                <a href="#" title="imagen 2"><img src="img/2.jpg" alt="imagen2"></a>
+                <a href="#" title="imagen 3"><img src="img/3.jpg" alt="imagen3"></a>
+                <a href="#" title="imagen 4"><img src="img/4.jpg" alt="imagen4"></a>
+                <a href="#" title="imagen 5"><img src="img/5.jpg" alt="imagen5"></a>
+                <a href="#" title="imagen 6"><img src="img/6.jpg" alt="imagen6"></a>
+                <a href="#" title="imagen 7"><img src="img/7.jpg" alt="imagen7"></a>
+                <a href="#" title="imagen 8"><img src="img/8.jpg" alt="imagen8"></a>
+                <a href="#" title="imagen 9"><img src="img/9.jpg" alt="imagen9"></a>
+            </div>
+        </section>
+<br> <br><br> <br>   
+        <section id="contacto">
+            <h3>CONTÁCTANOS</h3><br>   
+            <div id="formulario">
+                <form action="">
+                    <input type="text" name="Nombre" placeholder="Nombre" required >
+                    <input type="email" name="Correo" placeholder="Email" required >
+                    <input type="tel" name="Telefono" placeholder="Telefono" required pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="El número debe ser llenado de la siguiente manera: XXX XXX XXXX">
+                    <textarea name="" id="" cols="30" rows="10" required placeholder="mensaje"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.7416186617914!2d-89.94887213456761!3d20.913668429415996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5603ccdbe7bed9%3A0xd04a362f8e46d018!2sArcadia%20%22caf%C3%A9%20-%20restaurante%22!5e0!3m2!1ses!2smx!4v1652460046138!5m2!1ses!2smx" width="600" height="450" ></iframe>
+            </div>
+            <a href="#contenido" class="arriba"></a>
+        </section>
+        <footer>
+            <p>Copyrigth &copy; FELIPE UC PECH- Derechos reservados </p>
+        </footer>
+    </main>
+</body>
+</html>

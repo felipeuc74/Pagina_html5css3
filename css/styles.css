@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{box-sizing: border-box;}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+main{
+    height: 100%;
+}
+section{
+    height: 100%;
+    padding: 4em 2em;
+    position: relative;
+    width: 100%;
+    
+}
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#logo{
+    background: url(../svg/logo.svg) no-repeat;
+    background-size: contain;
+    float: left;
+    height: 2.125rem;
+    margin-left: 1.185em;
+    width: 25%;
+
+}
+nav{
+    float: right;
+    text-align: right;
+    width: 70%;
+}
+ul{list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    border-right: 0.03125em solid rgba(255, 255, 255, 1) ;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+ul li a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+ul li a:hover, ul li a:active{
+    color: rgba(0, 210, 100, 1);
+}
+ul li:nth-last-of-type(1){
+    border-right: none;
+}
+
+video{
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+}
+#home{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#home #globo{
+    background: url(../svg/globo.svg) no-repeat;
+    background-size: contain;
+    height: 11rem;
+    left: 50%;
+    position: absolute;
+    top:7em;
+    transform: translateX(-50%);
+    width: 12.5rem;
+}
+#home h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    top: 47%;
+}
+#home p{
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0 20%;
+    position: relative;
+    font-size: 0.9rem;
+    top: 50%;
+}
+#home a{
+    background: linear-gradient(rgba(0, 210, 100, 1), rgba(0, 130, 60, 1));
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    display: block ;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 12em;
+    padding: 0.7em 0;
+    text-decoration: none;
+    letter-spacing: 5px;
+    border-radius: 0.25em;
+    top: 60%;
+    left: 42%;
+}
+
+
+#home #abajo{
+    background: url(../svg/abajo.svg) no-repeat;
+    display: block;
+    height: 3rem;
+    opacity: 0;
+    position: relative;
+    top: 63%;
+    transition: all 0.35s;
+    width: 3rem;
+    z-index: 1;
+    left: 48%;
+}
+/* AL PASAR ENCIMA SE ACTIVE EL ID ABAJO*/
+#home a:hover + #abajo {
+    opacity: 0.5;
+    top: 62%;
+
+}
+article{
+    column-count: 3;
+    column-gap: 6em;
+    padding-top: 0.5em;
+}
+
+
+article #imagen1{
+    height: 14rem;
+    width: 14rem;;
+    border: 0.35em solid rgba(0, 210, 100, 1);
+    border-radius: 50%;
+    height: 12em;
+    margin: 0 auto 1.5em;
+    width: 12rem;
+}
+article #imagen2{
+    height: 14rem;
+    width: 14rem;;
+    border: 0.35em solid rgba(0, 210, 100, 1);
+    border-radius: 50%;
+    height: 12em;
+    margin: 0 auto 1.5em;
+    width: 12rem;
+}
+article #imagen3{
+    height: 14rem;
+    width: 14rem;;
+    border: 0.35em solid rgba(0, 210, 100, 1);
+    border-radius: 50%;
+    height: 12em;
+    margin: 0 auto 1.5em;
+    width: 12rem;
+}
+h4{
+    color:rgba(0, 210, 100, 1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;   
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+h3{
+    color:rgba(0, 0, 0, 0.5);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;   
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+#Temas a{
+    background: linear-gradient(rgba(0, 210, 100, 1), rgba(0, 130, 60, 1));
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    display: block ;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 12em;
+    padding: 0.7em 0;
+    text-decoration: none;
+    letter-spacing: 5px;
+    border-radius: 0.25em;
+    left: 20%;
+}
+#galeria #fotos img{
+height: 25%;
+width: 25%;
+}
+#galeria h2{
+    bottom: 80%;
+    color:rgba(0, 210, 100, 1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;   
+
+}
+/*estams entrando al id contacto y diciendo que los elementos formulario y mapa van a estar a la mitad*/
+#contacto #formulario, #contacto #mapa{
+float: left;
+width: 50%;
+}
+#contacto #formulario{
+    text-align: left;
+}
+#contacto #mapa iframe {
+    border:0;
+    width: 100%;
+    height: 400px;
+}
+
+#contacto input, #contacto textarea{
+    width: 95%;
+    color: rgba(0, 210, 100, 1);
+    border-radius: 0.25em;
+    border: 0.09375rem solid rgba(204, 204, 204, 1);
+    margin: 0.65em;
+    padding: 0.65;
+}
+#contacto input[type="submit"]{
+    background: linear-gradient(rgba(0, 210, 100, 1), rgba(0, 130, 60, 1));
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 5px;
+    border: 0;
+}
+.arriba{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    background: url(../svg/arriba.svg);
+    right: 1em;
+    bottom: 1em;
+}
+footer{
+    color: rgba(204, 204, 204, 1);
+    background-color:rgba(0, 0, 0, 0.5);
+    border-top: 0.5em solid rgba(0, 210, 100, 1);
+    padding: 0.4em 1em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}

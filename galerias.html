@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GALERIA</title>
+        <meta name="author" content="Felipe Uc Pech">
+        <meta name="keywords" content="galeria, html5, css3">
+        <meta name="description" content="galeria de imagenes en html5 y css3">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/images.css">
+        <script src="js/modernizr.js"></script>
+        <script src="js/prefixfree.js"></script>
+        <script src="js/scrollomatic.js" ></script>
+
+        <script>
+            $(document).ready(function(){
+                $("a.scroll").scrollomatic();
+            });
+        </script>
+
+    </head>
+    <body>
+       
+        <header>
+            <a href="#home"></a>
+            <div id="logo"></div>
+            <nav id="new">
+                <ul>
+                    <li><a href="index.html" class="scroll">Home</a></li>
+                    <li><a href="#temas" class="scroll">Temas</a></li>
+                    <li><a href="#galeria" class="scroll">Galeria</a></li>
+                    <li><a href="#contacto" class="scroll">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <section id="hold">
+                <article>
+                    <h1>LO MÁS NUEVO!</h1><br>
+                    <ul>
+                        <li><a title="imagen 1" href="#"><img src="img/1.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 2" href="#"><img src="img/2.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 3" href="#"><img src="img/3.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 4" href="#"><img src="img/4.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 5" href="#"><img src="img/5.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 6" href="#"><img src="img/6.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 7" href="#"><img src="img/7.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 8" href="#"><img src="img/8.jpg" alt="imagen"></a></li>
+                        <li><a title="imagen 9" href="#"><img src="img/9.jpg" alt="imagen"></a></li>
+                    </ul>
+                </article>
+            </section>
+            
+        </main>
+        <footer>
+            <p>Copyrigth &copy; FELIPE UC PECH- Derechos reservados </p>
+        </footer>
+    </body>
+</html>
